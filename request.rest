@@ -1,0 +1,29 @@
+GET http://localhost:5000/products
+
+###
+GET http://localhost:5000/products/8
+
+###
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "kd_barang" : "NIKE002",
+    "nm_barang" : "NIKE AIR MAX",
+    "stok" : "10",
+    "harga" : "2300000"
+}
+
+###
+PATCH http://localhost:5000/products/7
+Content-Type: application/json
+
+{
+    "kd_barang" : "VANS001",
+    "nm_barang" : "VANS BACK TO SCHOOL",
+    "stok" : "10",
+    "harga" : "1200000"
+}
+
+###
+DELETE http://localhost:5000/products/8
